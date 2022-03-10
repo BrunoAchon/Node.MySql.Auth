@@ -9,3 +9,6 @@ Neste projeto uso uma estrutura simples de MVC, sem muita ênfase em demonstrar 
 
 * MySql Workbench - (sem server) para visualizar os dados de crud mais facilmente
     * https://www.mysql.com/products/workbench/
+
+## Banco
+Basta criar uma base de dados com o nome toughts que o sistema irá fazer o resto sozinho
