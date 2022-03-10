@@ -16,9 +16,12 @@ const toughtsRoutes = require("./routes/toughtsRoutes");
 const authRoutes = require("./routes/authRoutes");
 const ToughController = require("./controllers/ToughtController");
 
+// template engine
 app.engine("handlebars", exphbs());
 app.set("view engine", "handlebars");
 
+
+// respostar do body
 app.use(
   express.urlencoded({
     extended: true,
@@ -66,7 +69,7 @@ app.use((req, res, next) => {
 
 app.use("/toughts", toughtsRoutes);
 app.use("/", authRoutes);
-
+// este comando chama a pagina de pensamentos como pagina principal
 app.get("/", ToughController.showToughts);
 
 conn

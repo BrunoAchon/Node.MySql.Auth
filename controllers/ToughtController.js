@@ -4,6 +4,7 @@ const User = require('../models/User')
 const { Op } = require('sequelize')
 
 module.exports = class ToughController {
+  
   static async dashboard(req, res) {
     const userId = req.session.userid
 
@@ -91,8 +92,9 @@ module.exports = class ToughController {
 
   static removeTought(req, res) {
     const id = req.body.id
+    const UserId = req.session.userId
 
-    Tought.destroy({ where: { id: id } })
+    Tought.destroy({ where: { id: id, UserId: UserId} })
       .then(() => {
         req.flash('message', 'Pensamento removido com sucesso!')
         req.session.save(() => {

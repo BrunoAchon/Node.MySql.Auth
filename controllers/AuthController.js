@@ -78,7 +78,7 @@ module.exports = class UserController {
 
     User.create(user)
       .then((user) => {
-        // initialize session
+        // initializa a session logo apos se cadastrar
         req.session.userid = user.id
 
         // console.log('salvou dado')

@@ -11,4 +11,4 @@ Neste projeto uso uma estrutura simples de MVC, sem muita ênfase em demonstrar 
     * https://www.mysql.com/products/workbench/
 
 ## Banco
-Basta criar uma base de dados com o nome toughts que o sistema irá fazer o resto sozinho
+Basta criar uma base de dados com o nome "pensamentos" que o sistema irá fazer o resto sozinho
